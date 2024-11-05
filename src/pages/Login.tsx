@@ -5,6 +5,9 @@ import Swal from 'sweetalert2'; // Import SweetAlert2
 import 'sweetalert2/dist/sweetalert2.min.css'; // Import SweetAlert2 styles
 import "../pages/Login.css";
 
+import Logo from '../../public/img/logogogogo.png';
+import AssetLogin from '../../public/img/LoginAsset2.gif';
+
 const Login = () => {
     const [email, setEmail] = createSignal('');
     const [password, setPassword] = createSignal('');
@@ -89,7 +92,7 @@ const Login = () => {
 
             <div class="login-form-container">
                 <div class="login-card">
-                    <img src="public\img\LogoBaruFix.png" alt="Logo" class="logo" />
+                    <img src={Logo} alt="Logo" class="logo" />
                     <h1>Masuk ke akun Anda</h1>
                     <p>Selamat datang kembali!</p>
                     <form onSubmit={handleSubmit}>
@@ -122,7 +125,7 @@ const Login = () => {
                     <p class="register-page">Belum punya akun? <a href="/">Buat sekarang!</a></p>
                 </div>
                 <div class="login-illustration">
-                    <img src="public\img\LoginAsset2.gif" alt="Dashboard Illustration" class="login-form-illustration" />
+                    <img src={AssetLogin} alt="Dashboard Illustration" class="login-form-illustration" />
                     <p>Masuk sekarang untuk mengakses dashboard dan memanfaatkan semua fitur kami yang dirancang untuk membantu Anda memahami data secara lebih efektif.</p>
                 </div>
             </div>

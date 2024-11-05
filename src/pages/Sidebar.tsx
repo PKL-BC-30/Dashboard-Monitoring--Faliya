@@ -5,6 +5,9 @@ import Swal from 'sweetalert2'; // Import SweetAlert2
 import 'sweetalert2/dist/sweetalert2.min.css'; // Import SweetAlert2 styles
 import './Sidebar.css';
 
+import LogoDashboard from '../../public/img/Logo2.png';
+
+
 const Sidebar: Component = () => {
   const navigate = useNavigate();
 
@@ -72,7 +75,7 @@ const Sidebar: Component = () => {
   return (
     <div class="sidebar">
       <div class="logo-sidebar">
-        <img src="public\img\Logo2.png" alt="Logo" />
+        <img src={LogoDashboard} alt="Logo" />
         <h1>Watch<span>flow</span></h1>
       </div>
       <nav>

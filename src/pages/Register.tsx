@@ -5,6 +5,9 @@ import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import "./Register.css";
 
+import LogoReg from '../../public/img/LogoBaruFix.png';
+import AssetReg from '../../public/img/RegisterAsset2.gif';
+
 export default function Register() {
   const [name, setName] = createSignal('');
   const [birthdate, setBirthdate] = createSignal('');
@@ -298,7 +301,7 @@ export default function Register() {
 
       <div class="register-form-container">
         <div class="register-form-card">
-          <img src="public\img\LogoBaruFix.png" alt="Logo" class="register-form-logo" />
+          <img src={LogoReg} alt="Logo" class="register-form-logo" />
           <h1 class="register-form-title">Buat akun Anda</h1>
           <p class="register-form-subtitle">Selamat datang! Silahkan masukkan informasi Anda</p>
           <form onSubmit={handleRegister}>
@@ -562,7 +565,7 @@ export default function Register() {
           </form>
         </div>
         <div class="register-form-illustration">
-          <img src="public\img\RegisterAsset2.gif" alt="Illustration" class="register-form-pict" />
+          <img src={AssetReg} alt="Illustration" class="register-form-pict" />
           <p class="register-form-desc">D'board adalah solusi unggul yang memudahkan Anda dalam memantau dan mengelola data pengguna. Daftarkan akun Anda untuk mulai menjelajahi dashboard yang dirancang khusus untuk memenuhi kebutuhan Anda.</p>
         </div>
       </div>

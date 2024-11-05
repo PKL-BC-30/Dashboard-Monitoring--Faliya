@@ -4,6 +4,7 @@ import "./Navbar.css";
 import DarkMode from "./DarkMode";
 import "./DarkMode.css";
 
+
 const Navbar: Component = () => {
   const [username, setUsername] = createSignal("User");
 
